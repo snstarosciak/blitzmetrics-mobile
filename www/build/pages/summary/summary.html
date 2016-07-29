@@ -1,0 +1,53 @@
+<ion-navbar *navbar class="dashboard-toolbar">
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Summary</ion-title>
+</ion-navbar>
+
+<ion-content class="summary">
+  <div class="segment-nav">
+    <ion-segment [(ngModel)]="network">
+      <ion-segment-button value="facebook">
+        <i class="fa fa-facebook-square"></i> Facebook
+      </ion-segment-button>
+      <ion-segment-button value="twitter">
+        <i class="fa fa-twitter"></i> Twitter
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="network">
+    <ion-list *ngSwitchWhen="'facebook'">
+      <ion-item>
+        <ul class="network-stat-list">
+          <li>
+            <div class="stat-icon">
+              <i class="fa fa-users"></i>
+            </div>
+          </li>
+          <li>
+            <div class="stat-data">
+              <div class="title">FANS</div>
+              <div class="stat">20,156,155</div>
+            </div>
+          </li>
+          <li>
+            <div class="stat-graph">
+             <bobboline [data]="123"></bobboline>
+            </div>
+          </li>
+        </ul>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'twitter'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+

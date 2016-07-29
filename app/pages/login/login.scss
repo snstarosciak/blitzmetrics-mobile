@@ -1,0 +1,37 @@
+
+.login-page .logo {
+  padding: 20px 0;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.login-page .logo img {
+  max-width: 150px;
+}
+
+
+.login {
+  .login-block {
+    text-align:center;
+    left:50%;
+    top:40%;
+    position:absolute;
+    @include transform(translate3d(-50%, -40%, 0));
+
+    button {
+      background:#3b5998;
+      text-transform:none;
+      padding:20px 30px;
+      font-size:16px;
+
+      i {
+        margin-right:10px;
+        font-size:20px
+      }
+
+      &:hover {
+        background:#4366AE;
+      }
+    }
+  }
+}

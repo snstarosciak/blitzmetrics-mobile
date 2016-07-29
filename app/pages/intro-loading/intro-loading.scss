@@ -1,0 +1,31 @@
+.intro-loading {
+  .loading-block {
+    position:absolute;
+    left:50%;
+    top:40%;
+    text-align:center;
+    @include transform(translateX(-50%) translateY(-50%));
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    p {
+      color:#FFF;
+    }
+
+    ion-spinner {
+      margin-top:20px;
+
+       svg {
+        stroke: #fff !important;
+      }
+      svg .stop1 {
+        stop-color: #fff;
+      }
+      svg .stop2 {
+        stop-color: #fff;
+      }
+    }
+  }
+}

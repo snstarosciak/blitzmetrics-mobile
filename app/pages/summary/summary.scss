@@ -1,0 +1,37 @@
+.summary {
+  .network-stat-list {
+    padding:0;
+    display:flex;
+    align-items: center;
+    list-style-type:none;
+
+    li {
+
+      &:first-child {
+        width:70px;
+      }
+      text-shadow:0 2px 2px #131C24;
+
+      i {
+        font-size:20px;
+      }
+    }
+
+    .stat-data {
+
+      .title {
+        font-size:10px;
+        letter-spacing:2px;
+      }
+
+      .stat {
+        font-size:20px;
+        font-weight:bold;
+      }
+    }
+
+    .stat-icon {
+      text-align:center;
+    }
+  }
+}

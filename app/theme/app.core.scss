@@ -1,0 +1,91 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+@import 'app.mixins';
+@import '../../www/css/font-awesome/font-awesome.min';
+
+@import "../pages/about/about";
+
+@import "../pages/summary/summary";
+
+@import "../pages/login/login";
+@import "../pages/intro-loading/intro-loading";
+
+// Custom CSS
+.loading-bg {
+  background:url('../../img/bg.jpg') no-repeat;
+  background-size:cover;
+  position:relative;
+
+  &:before {
+    position:absolute;
+    top:0;
+    content:'';
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(35,52,68, .4);
+  }
+}
+
+.dashboard-toolbar {
+  .toolbar-background {
+    background:#5e87b0;
+    border-bottom:1px solid #5e87b0;
+  }
+
+  .bar-button-default,
+  .toolbar-title {
+    color:#FFF;
+  }
+}
+
+ion-content {
+  background:url('../../img/bg.jpg') no-repeat;
+  background-size:cover;
+  position:relative;
+
+  &:before {
+    position:absolute;
+    top:0;
+    content:'';
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(35,52,68, .8);
+
+  }
+}
+
+.item,
+ion-list > .item:last-child {
+  color:#FFF;
+  background:none;
+  border:0;
+}
+
+.segment-nav {
+  background:#5e87b0;
+
+  .segment-button {
+    position:relative;
+    border-top:0;
+    color:#FFF;
+    border-bottom:2px solid #5e87b0;
+  }
+
+  .segment-button.segment-activated {
+    background:none;
+    border-bottom:2px solid #FFF;
+  }
+}
+
+tabbar {
+  border:1px solid rgba(35,52,68, .8);
+  background:rgba(35,52,68, .8);
+}
