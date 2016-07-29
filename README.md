@@ -10,4 +10,7 @@ ionic serve
 files in question:
 
 /app/directives/bobboline/bobboline.html
+
 /app/directives/bobboline/bobboline.ts
+
+/www/js/bobbograph.js
